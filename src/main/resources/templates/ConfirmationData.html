@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication Success</title>
+</head>
+<body>
+<h1>Below details of the student are verified successfully</h1>
+<br><br>
+Full name of the student :
+<span th:text="${student.firstName} + ' ' + ${student.lastName}"></span>
+<br><br>
+Country :
+<span th:text="${student.country}"></span>
+<br><br>
+Favourite Programming Language :
+<span th:text="${student.language}"></span>
+<br><br>
+Favourite Operating Systems :
+<span th:text="${student.operationSystem}"></span>
+</body>
+</html>

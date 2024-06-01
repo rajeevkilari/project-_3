@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STUDENT FORM</title>
+</head>
+
+<body>
+
+<h1>Fill the form details</h1>
+<form th:action="@{/outputVersionThree}" method = "POST">
+<input type="text" name = "Name" placeholder="Enter name" />
+<input type="submit" value="Submit" />
+<p th:text=" 'time on the server is :' + ${time}" > </p>
+</form>
+</body>
+
+</html>
